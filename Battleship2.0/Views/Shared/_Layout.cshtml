@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+	<link href="~/Styles/bootstrap.css" rel="stylesheet" />
+	<link href="~/Styles/mdb.css" rel="stylesheet" />
+	<link href="~/Styles/style.css" rel="stylesheet" />
+	<title>@ViewBag.Title</title>
+</head>
+<body>
+	<header>
+		<!--Navbar-->
+		<nav class="navbar navbar-expand-lg navbar-dark primary-color">
+
+			<!-- Navbar brand -->
+			<a class="navbar-brand" href="#">Battleship 2.0</a>
+
+			<!-- Collapse button -->
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav" aria-controls="basicExampleNav"
+					aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<!-- Collapsible content -->
+			<div class="collapse navbar-collapse" id="basicExampleNav">
+
+				<!-- Links -->
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item active">
+						<a class="nav-link" href="#">
+							Home
+							<span class="sr-only">(current)</span>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">About</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Contact</a>
+					</li>
+
+					<!-- Dropdown -->
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">New Game</a>
+						<div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+							<a class="dropdown-item" href="#">1 player</a>
+							<a class="dropdown-item" href="#">2 players</a>
+						</div>
+					</li>
+
+				</ul>
+				<!-- Links -->
+
+				<form class="form-inline">
+					<div class="md-form my-0">
+						<input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+					</div>
+				</form>
+			</div>
+			<!-- Collapsible content -->
+
+		</nav>
+		<!--/.Navbar-->
+	</header>
+	<div>
+		@RenderBody()
+	</div>
+	<script src="~/Scripts/jquery-3.3.1.min.js"></script>
+	<script src="~/Scripts/bootstrap.js"></script>
+	<script src="~/Scripts/mdb.js"></script>
+	<script src="~/Scripts/popper.min.js"></script>
+</body>
+</html>
